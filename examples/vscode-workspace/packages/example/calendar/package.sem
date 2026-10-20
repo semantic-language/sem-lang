@@ -1,0 +1,10 @@
+# 意味パッケージ
+  版: 0.10.0
+  所有者: example/calendar
+
+# 依存パッケージ
+  識別子: sem-lang/standard
+
+# 言語ソース
+  ソース: language/calendar.sem
+  ダイジェスト: 60d1d55b0ed9041f3cc4bfabf79996c7c5db5368b5086022d1930e84b9a52130

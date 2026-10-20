@@ -1,0 +1,50 @@
+[workspace]
+members = [
+    "crates/sem-lang-inference-client",
+    "crates/sem-lang-core",
+    "crates/sem-lang-vocab",
+    "crates/sem-lang-runtime",
+    "crates/sem-lang-frontend",
+    "crates/sem-lang-memory",
+    "crates/sem-lang-repository",
+    "crates/sem-lang-store-memory",
+    "crates/sem-lang-codec",
+    "crates/sem-lang-store-fs",
+    "crates/sem-lang-evolution",
+    "crates/sem-lang",
+    "crates/sem-lang-cli",
+    "crates/sem-lang-testkit",
+    "crates/sem-lang-linguistics",
+    "crates/sem-lang-usage",
+    "crates/sem-lang-induction",
+    "crates/sem-lang-language",
+    "crates/sem-lang-standard",
+    "crates/sem-lang-context",
+    "crates/sem-lang-execution",
+    "crates/sem-lang-tooling",
+    "crates/sem-lang-language-server",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+repository = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "README.md"
+rust-version = "1.97"
+keywords = ["semantic", "language", "compiler", "runtime", "vocabulary"]
+categories = ["development-tools", "science"]
+
+[workspace.dependencies]
+thiserror = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["arbitrary_precision", "float_roundtrip"] }
+serde_with = { version = "3.12", features = ["std", "json"] }
+clap = { version = "4.5", features = ["derive", "env"] }
+sha2 = "0.11.1"
+base64 = "0.22"
+uuid = { version = "1.11", features = ["v7", "serde"] }
+
+time = { version = "0.3", features = ["formatting", "macros", "parsing"] }

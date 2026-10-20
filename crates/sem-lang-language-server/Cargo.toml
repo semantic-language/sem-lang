@@ -1,0 +1,13 @@
+[package]
+name = "sem-lang-language-server"
+version = "0.10.0"
+edition.workspace = true
+license.workspace = true
+description = "Language Server Protocol implementation for sem-lang workspaces."
+rust-version = "1.97"
+publish = false
+
+[dependencies]
+sem-lang-tooling = { version = "=0.10.0", path = "../sem-lang-tooling" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+serde_json.workspace = true

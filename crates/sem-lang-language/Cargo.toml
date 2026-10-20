@@ -1,0 +1,23 @@
+[package]
+name = "sem-lang-language"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Deterministic language resource expansion and semantic comparison."
+repository = "https://github.com/semantic-language/sem-lang"
+documentation = "https://docs.rs/sem-lang-language"
+readme = "README.md"
+rust-version = "1.97"
+keywords = ["language", "compiler", "resources"]
+categories = ["parser-implementations", "development-tools"]
+publish = false
+
+[dependencies]
+serde_json.workspace = true
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+thiserror.workspace = true
+
+[dev-dependencies]
+sem-lang-fixtures = { path = "../sem-lang-fixtures" }

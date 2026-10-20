@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.10.0",
+  "owner": "zixcel/reference",
+  "revision": "calendar-personal-0.10.0",
+  "resource": {
+    "resource_id": "calendar/personal",
+    "contract_revision": "calendar-personal-0.10.0",
+    "value_schema": { "type": "null" },
+    "readable": false,
+    "availability": { "state": "available" },
+    "operations": [
+      {
+        "operation_id": "calendar/event/create",
+        "target": "calendar/personal",
+        "contract_revision": "calendar-personal-0.10.0",
+        "input_schema": {
+          "type": "object",
+          "fields": {
+            "start": { "type": "string", "min_length": 1, "max_length": 128 },
+            "end": { "type": "string", "min_length": 1, "max_length": 128 },
+            "location": { "type": "string", "min_length": 1, "max_length": 256 }
+          },
+          "required": ["start", "end", "location"]
+        },
+        "availability": { "state": "available" },
+        "expected_revision_required": false
+      },
+      {
+        "operation_id": "calendar/invitation/create",
+        "target": "calendar/personal",
+        "contract_revision": "calendar-personal-0.10.0",
+        "input_schema": {
+          "type": "object",
+          "fields": {
+            "start": { "type": "string", "min_length": 1, "max_length": 128 },
+            "end": { "type": "string", "min_length": 1, "max_length": 128 },
+            "location": { "type": "string", "min_length": 1, "max_length": 256 },
+            "participants": { "type": "array", "items": { "type": "string", "min_length": 1, "max_length": 256 }, "max_items": 64 }
+          },
+          "required": ["start", "end", "location", "participants"]
+        },
+        "availability": { "state": "available" },
+        "expected_revision_required": false
+      }
+    ]
+  },
+  "semantic_bindings": [
+    { "term_id": "5ee9fff861129e90d98164882d8bd122", "operation_id": "calendar/event/create" },
+    { "term_id": "5ee9fff861129e90d98164882d8bd122", "operation_id": "calendar/invitation/create" }
+  ],
+  "input_bindings": [
+    { "term_id": "95c072339428124ed7b14ee0ec0b167d", "operation_id": "calendar/event/create", "input_path": "/start" },
+    { "term_id": "94f6d5969d3d43c4c15611b3468f4bf2", "operation_id": "calendar/event/create", "input_path": "/location" },
+    { "term_id": "95c072339428124ed7b14ee0ec0b167d", "operation_id": "calendar/invitation/create", "input_path": "/start" },
+    { "term_id": "94f6d5969d3d43c4c15611b3468f4bf2", "operation_id": "calendar/invitation/create", "input_path": "/location" }
+  ],
+  "authentication": "authentication/microsoft/personal"
+}

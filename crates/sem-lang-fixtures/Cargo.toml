@@ -1,0 +1,11 @@
+[package]
+license = "MPL-2.0"
+name = "sem-lang-fixtures"
+version = "0.10.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }

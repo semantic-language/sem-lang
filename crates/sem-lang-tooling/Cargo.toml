@@ -1,0 +1,24 @@
+[package]
+name = "sem-lang-tooling"
+version = "0.10.0"
+edition.workspace = true
+license.workspace = true
+description = "Deterministic editor analysis and capability projection for sem-lang."
+rust-version = "1.97"
+publish = false
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-language = { version = "=0.10.0", path = "../sem-lang-language" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-standard = { version = "=0.10.0", path = "../sem-lang-standard" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+zixcel-interaction = { version = "=0.10.0" }
+zixcel-contracts = { version = "=0.10.1" }
+zixcel-graph = { version = "=0.10.0", features = ["graph", "redb"] }
+zixcel-revision = { version = "=0.10.0" }
+zixcel-version-control = { version = "=0.10.0" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+time.workspace = true

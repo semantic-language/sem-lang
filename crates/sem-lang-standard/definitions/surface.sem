@@ -1,0 +1,356 @@
+# Language
+  Identifier: sem-lang/standard/surface
+  Version: 0.10.0
+  Dependencies: sem-lang/standard/semantic, sem-lang/standard/pipeline, sem-lang/standard/document
+
+// Japanese and English are intentionally adjacent for each shared meaning.
+# Surface
+  Language: ja-JP
+  Surface: 記録
+  Normalized: 記録
+  Kind: Structural
+  Target: sem-lang/standard/semantic::Assertion
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Statement
+  Normalized: statement
+  Kind: Structural
+  Target: sem-lang/standard/semantic::Assertion
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 質問
+  Normalized: 質問
+  Kind: Structural
+  Target: sem-lang/standard/semantic::Question
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Question
+  Normalized: question
+  Kind: Structural
+  Target: sem-lang/standard/semantic::Question
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 依頼
+  Normalized: 依頼
+  Kind: Structural
+  Target: sem-lang/standard/semantic::Request
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Request
+  Normalized: request
+  Kind: Structural
+  Target: sem-lang/standard/semantic::Request
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: ください
+  Normalized: ください
+  Kind: Pragmatic
+  Target: sem-lang/standard/semantic::Request
+  Priority: 90
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Please
+  Normalized: please
+  Kind: Pragmatic
+  Target: sem-lang/standard/semantic::Request
+  Priority: 90
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 作る
+  Normalized: 作る
+  Kind: Operational
+  Target: sem-lang/standard/semantic::Create
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 作って
+  Normalized: 作る
+  Kind: Operational
+  Target: sem-lang/standard/semantic::Create
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Create
+  Normalized: create
+  Kind: Operational
+  Target: sem-lang/standard/semantic::Create
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 明日
+  Normalized: 明日
+  Kind: Temporal
+  Target: sem-lang/standard/semantic::Tomorrow
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Tomorrow
+  Normalized: tomorrow
+  Kind: Temporal
+  Target: sem-lang/standard/semantic::Tomorrow
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 近く
+  Normalized: 近く
+  Kind: Relational
+  Target: sem-lang/standard/semantic::Near
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Near
+  Normalized: near
+  Kind: Relational
+  Target: sem-lang/standard/semantic::Near
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 入力
+  Normalized: 入力
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineSource
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Source
+  Normalized: source
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineSource
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 選択
+  Normalized: 選択
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineSelect
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Select
+  Normalized: select
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineSelect
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 変換
+  Normalized: 変換
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineTransform
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Transform
+  Normalized: transform
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineTransform
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 展開
+  Normalized: 展開
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineExpand
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Expand
+  Normalized: expand
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineExpand
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 集約
+  Normalized: 集約
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineAggregate
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Aggregate
+  Normalized: aggregate
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineAggregate
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 作用
+  Normalized: 作用
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineEffect
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Effect
+  Normalized: effect
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineEffect
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 結果
+  Normalized: 結果
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineResult
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Result
+  Normalized: result
+  Kind: Structural
+  Target: sem-lang/standard/pipeline::PipelineResult
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 目的
+  Normalized: 目的
+  Kind: Structural
+  Target: sem-lang/standard/document::DocumentPurpose
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Purpose
+  Normalized: purpose
+  Kind: Structural
+  Target: sem-lang/standard/document::DocumentPurpose
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 対象
+  Normalized: 対象
+  Kind: Structural
+  Target: sem-lang/standard/document::DocumentTarget
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Target
+  Normalized: target
+  Kind: Structural
+  Target: sem-lang/standard/document::DocumentTarget
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 完了条件
+  Normalized: 完了条件
+  Kind: Structural
+  Target: sem-lang/standard/document::CompletionCriteria
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Completion criteria
+  Normalized: completion criteria
+  Kind: Structural
+  Target: sem-lang/standard/document::CompletionCriteria
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 根拠となる文書
+  Normalized: 根拠となる文書
+  Kind: Structural
+  Target: sem-lang/standard/document::EvidenceReference
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Supporting documents
+  Normalized: supporting documents
+  Kind: Structural
+  Target: sem-lang/standard/document::EvidenceReference
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: ja-JP
+  Surface: 手順
+  Normalized: 手順
+  Kind: Structural
+  Target: sem-lang/standard/document::OrderedSteps
+  Priority: 100
+  Provenance: sem-lang/standard
+
+# Surface
+  Language: en-US
+  Surface: Steps
+  Normalized: steps
+  Kind: Structural
+  Target: sem-lang/standard/document::OrderedSteps
+  Priority: 100
+  Provenance: sem-lang/standard

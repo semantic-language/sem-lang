@@ -1,0 +1,20 @@
+{
+  "name": "@semantic-language/sem-lang-workspace",
+  "version": "0.10.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.29.3",
+  "scripts": {
+    "verify": "node scripts/verify.mts",
+    "typecheck": "tsc -p tsconfig.tools.json",
+    "test:tools": "node --test scripts/*.test.mts"
+  },
+  "engines": {
+    "node": ">=24.15.0 <25"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  },
+  "license": "MPL-2.0"
+}

@@ -1,0 +1,30 @@
+[package]
+name = "sem-lang-memory"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Explicit short-term and promoted semantic memory state."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "memory"]
+categories = ["development-tools", "science"]
+publish = false
+
+authors = ["sem-lang contributors"]
+
+[dependencies]
+zixcel-revision = { version = "=0.10.0", default-features = false }
+serde.workspace = true
+serde_json.workspace = true
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+thiserror.workspace = true
+
+[dev-dependencies]
+sem-lang-language = { version = "=0.10.0", path = "../sem-lang-language" }
+sem-lang-store-memory = { version = "=0.10.0", path = "../sem-lang-store-memory" }
+sem-lang-fixtures = { path = "../sem-lang-fixtures" }

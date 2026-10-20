@@ -1,0 +1,20 @@
+[package]
+name = "sem-lang-induction"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Typed, reviewable generalization over semantic observations."
+repository = "https://github.com/semantic-language/sem-lang"
+documentation = "https://docs.rs/sem-lang-induction"
+readme = "README.md"
+rust-version = "1.97"
+keywords = ["induction", "generalization", "linguistics"]
+categories = ["science", "development-tools"]
+publish = false
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-usage = { version = "=0.10.0", path = "../sem-lang-usage" }
+sem-lang-context = { version = "=0.10.0", path = "../sem-lang-context" }
+thiserror.workspace = true

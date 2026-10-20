@@ -1,0 +1,24 @@
+[package]
+name = "sem-lang-execution"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Provider-neutral typed semantic execution boundary."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://docs.rs/sem-lang-execution"
+readme = "../../README.md"
+rust-version = "1.97"
+publish = false
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-memory = { version = "=0.10.0", path = "../sem-lang-memory" }
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+sem-lang-store-memory = { version = "=0.10.0", path = "../sem-lang-store-memory" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }

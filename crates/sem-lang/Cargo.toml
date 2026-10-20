@@ -1,0 +1,44 @@
+[package]
+name = "sem-lang"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Composable semantic language engine with deterministic evaluation."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "language", "ontology", "knowledge-graph", "nlp"]
+categories = ["parser-implementations", "data-structures", "development-tools"]
+publish = false
+
+[features]
+default = ["json", "dsl", "memory-store"]
+json = ["sem-lang-codec"]
+dsl = ["sem-lang-frontend"]
+memory-store = ["sem-lang-memory", "sem-lang-store-memory"]
+fs-store = ["sem-lang-store-fs"]
+evolution = ["sem-lang-evolution"]
+semantic-execution = ["dep:sem-lang-execution", "memory-store", "dsl"]
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+sem-lang-runtime = { version = "=0.10.0", path = "../sem-lang-runtime" }
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+sem-lang-frontend = { version = "=0.10.0", path = "../sem-lang-frontend", optional = true }
+sem-lang-memory = { version = "=0.10.0", path = "../sem-lang-memory", optional = true }
+sem-lang-store-memory = { version = "=0.10.0", path = "../sem-lang-store-memory", optional = true }
+sem-lang-store-fs = { version = "=0.10.0", path = "../sem-lang-store-fs", optional = true }
+sem-lang-codec = { version = "=0.10.0", path = "../sem-lang-codec", optional = true }
+sem-lang-evolution = { version = "=0.10.0", path = "../sem-lang-evolution", optional = true }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-usage = { version = "=0.10.0", path = "../sem-lang-usage" }
+sem-lang-induction = { version = "=0.10.0", path = "../sem-lang-induction" }
+sem-lang-language = { version = "=0.10.0", path = "../sem-lang-language" }
+sem-lang-context = { version = "=0.10.0", path = "../sem-lang-context" }
+sem-lang-execution = { version = "=0.10.0", path = "../sem-lang-execution", optional = true, default-features = false }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true

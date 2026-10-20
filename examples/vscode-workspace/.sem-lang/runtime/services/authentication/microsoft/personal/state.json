@@ -1,0 +1,6 @@
+{
+  "schema_version": "0.10.0",
+  "owner": "zixcel/reference/authentication/runtime",
+  "revision": "zixcel-reference-authentication-runtime-0.10.0",
+  "state": "authorization_required"
+}

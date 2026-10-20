@@ -1,0 +1,29 @@
+# Language
+  Identifier: sem-lang/standard/document
+  Version: 0.10.0
+  Dependencies: sem-lang/standard/semantic
+
+# Term
+  Name: DocumentPurpose
+  Description: The intended outcome described by a document section
+  Meaning: Primitive/Value
+
+# Term
+  Name: DocumentTarget
+  Description: The subject or value to which a document section applies
+  Meaning: Primitive/Reference
+
+# Term
+  Name: CompletionCriteria
+  Description: Conditions that determine whether an intended outcome is complete
+  Meaning: Primitive/Predicate
+
+# Term
+  Name: EvidenceReference
+  Description: A human-visible reference supporting a statement
+  Meaning: Primitive/Reference
+
+# Term
+  Name: OrderedSteps
+  Description: A sequence whose order is semantically significant
+  Meaning: Primitive/Composition

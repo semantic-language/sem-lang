@@ -1,0 +1,25 @@
+[package]
+name = "sem-lang-codec"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Deterministic serialization of owner-typed language and repository data."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "codec", "serialization"]
+categories = ["development-tools", "science"]
+publish = false
+
+authors = ["sem-lang contributors"]
+
+[dependencies]
+hex = "0.4.3"
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true

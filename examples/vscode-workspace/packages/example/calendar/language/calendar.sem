@@ -1,0 +1,25 @@
+# Language
+  Dependencies: sem-lang/standard/semantic
+
+# Term
+  Name: Reservation
+  Description: A reserved use of a place or service during a time interval
+  Meaning: Primitive/Value
+
+# Surface
+  Language: ja-JP
+  Surface: 予約
+  Normalized: 予約
+  Kind: Denotational
+  Target: Reservation
+  Priority: 100
+  Provenance: example/calendar
+
+# Surface
+  Language: en-US
+  Surface: Reservation
+  Normalized: reservation
+  Kind: Denotational
+  Target: Reservation
+  Priority: 100
+  Provenance: example/calendar

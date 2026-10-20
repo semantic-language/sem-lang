@@ -1,0 +1,31 @@
+[package]
+repository.workspace = true
+exclude = ["/registration/**", "/state/**", "/.local/**", "/.state/**", "/.data/**", "/secrets/**", "/credentials/**", "/.env", "/.env.production", "/.env.local", "/*.tgz", "/*.tar.gz", "/*.tar", "/*.zip", "/*.whl", "/*.crate", "/.ruff_cache/**", "/.mypy_cache/**", "/.tox/**", "/.nox/**", "/.hypothesis/**", "/.coverage", "/.coverage.*", "/htmlcov/**", "/lcov.info", "/junit.xml", "/*.profraw", "/*.profdata", "/*.egg-info/**", "/target/**", "/node_modules/**", "/dist/**", "/build/**", "/.cache/**", "/.pytest_cache/**", "/coverage/**"]
+name = "sem-lang-inference-client"
+version = "0.10.1"
+edition = "2024"
+license = "MPL-2.0"
+description = "Bounded sem-lang caller for an existing Zixcel local inference process."
+rust-version = "1.97"
+publish = false
+
+[dependencies]
+hex = "0.4.3"
+sha2 = "0.11.1"
+zixcel-inference-cost = { package = "zixcel-cost", version = "=0.10.0" }
+sem-lang = { version = "=0.10.0", path = "../sem-lang" }
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-execution = { version = "=0.10.0", path = "../sem-lang-execution" }
+sem-lang-memory = { version = "=0.10.0", path = "../sem-lang-memory" }
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+sem-lang-store-memory = { version = "=0.10.0", path = "../sem-lang-store-memory" }
+sem-lang-tooling = { version = "=0.10.0", path = "../sem-lang-tooling" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["arbitrary_precision", "float_roundtrip"] }
+zixcel-local-inference = { version = "=0.10.1" }
+
+
+[dev-dependencies]
+sem-lang-store-fs = { version = "=0.10.0", path = "../sem-lang-store-fs" }
+tempfile = "3.27.0"

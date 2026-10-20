@@ -1,0 +1,15 @@
+[package]
+name = "sem-source-input-provider-fixture"
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+publish = false
+
+[workspace]
+
+[dependencies]
+sem-lang-frontend = { path = "../../crates/sem-lang-frontend" }
+hat-source-curator = { git = "https://github.com/hathq/hat-source-curator", rev = "199cd7b792fdae7a8bdca14d46e9895dece3efba", version = "=0.10.0" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt"] }

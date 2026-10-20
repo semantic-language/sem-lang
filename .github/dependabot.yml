@@ -1,0 +1,55 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  # Keep Node API types within the supported Node 24 runtime.
+  # Revisit with an explicit runtime/CI upgrade; patch/minor updates remain enabled.
+  ignore:
+  - dependency-name: "@types/node"
+    versions: [">=25.0.0"]
+  directories:
+  - /
+  schedule:
+    interval: daily
+    time: '05:00'
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  groups:
+    compatible-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
+- package-ecosystem: cargo
+  directories:
+  - /
+  - /conformance/source
+  - /fixtures/source-consumer
+  - /fixtures/source-owner-composition
+  schedule:
+    interval: daily
+    time: '05:00'
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  groups:
+    compatible-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
+- package-ecosystem: github-actions
+  directories:
+  - /
+  schedule:
+    interval: daily
+    time: '05:00'
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  groups:
+    compatible-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch

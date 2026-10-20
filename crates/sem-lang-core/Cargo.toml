@@ -1,0 +1,21 @@
+[package]
+name = "sem-lang-core"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Stable, domain-neutral semantic terms and graph primitives."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "language", "core"]
+categories = ["development-tools", "science"]
+publish = false
+
+[dependencies]
+zixcel-revision = { version = "=0.10.0", default-features = false }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+sha2.workspace = true

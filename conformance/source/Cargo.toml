@@ -1,0 +1,20 @@
+[package]
+license = "MPL-2.0"
+name = "sem-lang-source-conformance"
+version = "0.10.0"
+edition = "2024"
+rust-version = "1.97"
+publish = false
+
+[workspace]
+
+[dev-dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../../crates/sem-lang-core" }
+sem-lang = { version = "=0.10.0", path = "../../crates/sem-lang" }
+sem-lang-context = { version = "=0.10.0", path = "../../crates/sem-lang-context" }
+sem-lang-memory = { version = "=0.10.0", path = "../../crates/sem-lang-memory" }
+sem-lang-vocab = { version = "=0.10.0", path = "../../crates/sem-lang-vocab" }
+sem-lang-store-fs = { version = "=0.10.0", path = "../../crates/sem-lang-store-fs" }
+sem-lang-repository = { version = "=0.10.0", path = "../../crates/sem-lang-repository" }
+serde_json = "1.0"
+tempfile = "3.27.0"

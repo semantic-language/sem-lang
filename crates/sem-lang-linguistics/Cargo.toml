@@ -1,0 +1,19 @@
+[package]
+name = "sem-lang-linguistics"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Stable linguistic kernel and domain-neutral semantic relations."
+repository = "https://github.com/semantic-language/sem-lang"
+documentation = "https://docs.rs/sem-lang-linguistics"
+readme = "README.md"
+rust-version = "1.97"
+keywords = ["linguistics", "kernel", "semantic"]
+categories = ["science", "development-tools"]
+publish = false
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+thiserror.workspace = true

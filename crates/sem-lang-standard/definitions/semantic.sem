@@ -1,0 +1,254 @@
+# Language
+  Identifier: sem-lang/standard/semantic
+  Version: 0.10.0
+  Dependencies: none
+
+# Term
+  Name: Value
+  Description: A semantic value
+  Meaning: Primitive/Value
+
+# Term
+  Name: Type
+  Description: A semantic type
+  Meaning: Primitive/Type
+
+# Term
+  Name: Predicate
+  Description: A proposition-producing predicate
+  Meaning: Primitive/Predicate
+
+# Term
+  Name: Relation
+  Description: A relation among semantic values
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Role
+  Description: A role held by an argument
+  Meaning: Primitive/Role
+
+# Term
+  Name: Proposition
+  Description: A proposition with truth conditions
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Reference
+  Description: A reference to an identified value
+  Meaning: Primitive/Reference
+
+# Term
+  Name: Variable
+  Description: A bound or unresolved semantic variable
+  Meaning: Primitive/Variable
+
+# Term
+  Name: Constraint
+  Description: A constraint over semantic values
+  Meaning: Primitive/Constraint
+
+# Term
+  Name: Composition
+  Description: A composition of semantic expressions
+  Meaning: Primitive/Composition
+
+# Term
+  Name: Quantification
+  Description: Quantification over values
+  Meaning: Primitive/Quantification
+
+# Term
+  Name: Polarity
+  Description: Positive or negative polarity
+  Meaning: Primitive/Polarity
+
+# Term
+  Name: Modality
+  Description: Required, permitted, or possible modality
+  Meaning: Primitive/Modality
+
+# Term
+  Name: Temporal
+  Description: A temporal relation or value
+  Meaning: Primitive/Temporal
+
+# Term
+  Name: Spatial
+  Description: A spatial relation or value
+  Meaning: Primitive/Spatial
+
+# Term
+  Name: Causality
+  Description: A causal relation
+  Meaning: Primitive/Causality
+
+# Term
+  Name: Entity
+  Description: Something that can be referred to
+  Meaning: Primitive/Value
+
+# Term
+  Name: State
+  Description: A condition holding over an interval
+  Meaning: Primitive/Value
+
+# Term
+  Name: Event
+  Description: An occurrence situated in time
+  Meaning: Primitive/Value
+
+# Term
+  Name: Action
+  Description: An event attributable to an actor
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Agent
+  Description: An entity capable of action
+  Meaning: Primitive/Value
+
+# Term
+  Name: Change
+  Description: A transition between states
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Intent
+  Description: An intended state or action
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Plan
+  Description: An ordered intention for action
+  Meaning: Primitive/Composition
+
+# Term
+  Name: Commitment
+  Description: An adopted obligation or intention
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Possession
+  Description: A relation of possession
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Existence
+  Description: Existence of a referent
+  Meaning: Primitive/Predicate
+
+# Term
+  Name: Identity
+  Description: Identity of a referent
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Part
+  Description: A part of a whole
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Set
+  Description: A collection of values
+  Meaning: Primitive/Composition
+
+# Term
+  Name: Time
+  Description: A temporal reference
+  Meaning: Primitive/Temporal
+
+# Term
+  Name: Place
+  Description: A spatial reference
+  Meaning: Primitive/Spatial
+
+# Term
+  Name: Tomorrow
+  Description: The day immediately following the context day
+  Meaning: Primitive/Temporal
+
+# Term
+  Name: Near
+  Description: A context-dependent spatial proximity relation
+  Meaning: Primitive/Spatial
+
+# Term
+  Name: Create
+  Description: Create a new value or state
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Update
+  Description: Change an existing value or state
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Delete
+  Description: Remove an existing value or state
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Infer
+  Description: Derive a candidate from selected evidence
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Assertion
+  Description: A communicated proposition
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Question
+  Description: A request for information
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Request
+  Description: A request for an action or result
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Proposal
+  Description: A proposed action or state
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Report
+  Description: A communicated observation or result
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Correction
+  Description: A correction to an earlier proposition
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Confirmation
+  Description: Confirmation of a proposition
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Rejection
+  Description: Rejection of a proposition or request
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Delegation
+  Description: Assignment of authority or work to another actor
+  Meaning: Primitive/Relation
+
+# Term
+  Name: BindingRequest
+  Description: A request to establish a binding
+  Meaning: Primitive/Proposition
+
+# Term
+  Name: Bind
+  Description: Establish an explicit binding
+  Meaning: Primitive/Relation
+
+# Term
+  Name: Cancel
+  Description: Cancel an adopted action or state
+  Meaning: Primitive/Relation

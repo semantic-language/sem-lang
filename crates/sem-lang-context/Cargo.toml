@@ -1,0 +1,23 @@
+[package]
+name = "sem-lang-context"
+version = "0.10.0"
+publish = false
+edition = "2024"
+license = "MPL-2.0"
+description = "Scoped semantic context bindings with revisioned persistence."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://docs.rs/sem-lang-context"
+rust-version = "1.97"
+readme = "README.md"
+
+[dependencies]
+zixcel-revision = { version = "=0.10.0", default-features = false }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+
+[dev-dependencies]
+tempfile = "3.27.0"

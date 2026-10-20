@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.10.0",
+  "owner": "zixcel/reference",
+  "revision": "service-appointment-directory-0.10.0",
+  "resource": {
+    "resource_id": "service/appointment/directory",
+    "contract_revision": "service-appointment-directory-0.10.0",
+    "value_schema": { "type": "null" },
+    "readable": false,
+    "availability": { "state": "precondition_failed", "reason": "provider-selection-required" },
+    "operations": [{
+      "operation_id": "service/appointment/request",
+      "target": "service/appointment/directory",
+      "contract_revision": "service-appointment-directory-0.10.0",
+      "input_schema": {
+        "type": "object",
+        "fields": {
+          "service_category": { "type": "string", "min_length": 1, "max_length": 256 },
+          "provider": { "type": "string", "min_length": 1, "max_length": 256 },
+          "requested_start": { "type": "string", "min_length": 1, "max_length": 128 }
+        },
+        "required": ["service_category", "provider", "requested_start"]
+      },
+      "availability": { "state": "precondition_failed", "reason": "provider-selection-required" },
+      "expected_revision_required": false
+    }]
+  },
+  "semantic_bindings": [{
+    "term_id": "5ee9fff861129e90d98164882d8bd122",
+    "operation_id": "service/appointment/request"
+  }],
+  "input_bindings": [
+    { "term_id": "95c072339428124ed7b14ee0ec0b167d", "operation_id": "service/appointment/request", "input_path": "/requested_start" },
+    { "term_id": "94f6d5969d3d43c4c15611b3468f4bf2", "operation_id": "service/appointment/request", "input_path": "/provider" }
+  ],
+  "authentication": null
+}

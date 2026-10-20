@@ -1,0 +1,23 @@
+[package]
+name = "sem-lang-vocab"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "External vocabulary descriptors for the semantic language."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "vocabulary"]
+categories = ["development-tools", "science"]
+publish = false
+
+authors = ["sem-lang contributors"]
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true

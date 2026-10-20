@@ -1,0 +1,14 @@
+[package]
+license = "MPL-2.0"
+name = "sem-lang-source-consumer"
+version = "0.10.0"
+edition = "2024"
+
+publish = false
+
+[workspace]
+
+[dependencies]
+sem-lang-codec = { version = "=0.10.0", path = "../../crates/sem-lang-codec" }
+sem-lang-frontend = { version = "=0.10.0", path = "../../crates/sem-lang-frontend" }
+serde_json = "1.0"

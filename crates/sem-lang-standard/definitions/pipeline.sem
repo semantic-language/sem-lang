@@ -1,0 +1,44 @@
+# Language
+  Identifier: sem-lang/standard/pipeline
+  Version: 0.10.0
+  Dependencies: sem-lang/standard/semantic
+
+# Term
+  Name: Pipeline
+  Description: A typed declarative data flow
+  Meaning: Primitive/Composition
+
+# Term
+  Name: PipelineSource
+  Description: The value or collection entering a pipeline
+  Meaning: Primitive/Reference
+
+# Term
+  Name: PipelineSelect
+  Description: A constraint that narrows a collection
+  Meaning: Primitive/Predicate
+
+# Term
+  Name: PipelineTransform
+  Description: A typed value transformation
+  Meaning: Primitive/Relation
+
+# Term
+  Name: PipelineExpand
+  Description: A collection-producing transformation flattened into its flow
+  Meaning: Primitive/Relation
+
+# Term
+  Name: PipelineAggregate
+  Description: A typed reduction or grouping
+  Meaning: Primitive/Relation
+
+# Term
+  Name: PipelineEffect
+  Description: The explicit external effect boundary of a pipeline
+  Meaning: Primitive/Relation
+
+# Term
+  Name: PipelineResult
+  Description: The typed result exposed by a pipeline
+  Meaning: Primitive/Value

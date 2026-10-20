@@ -1,0 +1,27 @@
+[package]
+name = "sem-lang-frontend"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Language-neutral frontend compilation into semantic terms."
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "frontend", "parser"]
+categories = ["development-tools", "science"]
+publish = false
+
+authors = ["sem-lang contributors"]
+
+[dependencies]
+zixcel-json-structure = { git = "https://github.com/zixcel/document-processing", rev = "a171286c1676a8bbaa7d5c32e7cd131a293fcc4d", version = "=0.1.0" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+sem-lang-context = { version = "=0.10.0", path = "../sem-lang-context" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+sem-lang-language = { version = "=0.10.0", path = "../sem-lang-language" }

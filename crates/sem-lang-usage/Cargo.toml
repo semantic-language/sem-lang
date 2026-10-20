@@ -1,0 +1,17 @@
+[package]
+name = "sem-lang-usage"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Evidence and usage observations kept separate from interpretation."
+repository = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "README.md"
+rust-version = "1.97"
+keywords = ["usage", "evidence", "linguistics"]
+categories = ["science", "development-tools"]
+publish = false
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-linguistics = { version = "=0.10.0", path = "../sem-lang-linguistics" }

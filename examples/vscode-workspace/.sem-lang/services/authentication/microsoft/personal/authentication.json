@@ -1,0 +1,7 @@
+{
+  "schema_version": "0.10.0",
+  "owner": "zixcel/reference/authentication",
+  "revision": "zixcel-reference-authentication-0.10.0",
+  "label": "Microsoft personal account",
+  "configuration_ref": "zixcel://authentication/configuration/microsoft/personal"
+}

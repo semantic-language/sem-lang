@@ -1,0 +1,11 @@
+# プロジェクト
+  版: 0.10.0
+  識別子: sem-lang/editor-example
+  言語: ja-JP
+
+# 意味パッケージ
+  マニフェスト: packages/example/calendar/package.sem
+  ダイジェスト: 83aad1c6a1231dcd8b98cbe92a51b5721b465aef797720b63f6b6a63fb075212
+
+# ソース
+  パス: work/instruction.sem

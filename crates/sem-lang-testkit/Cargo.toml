@@ -1,0 +1,24 @@
+[package]
+name = "sem-lang-testkit"
+version = "0.10.0"
+edition = "2024"
+license = "MPL-2.0"
+repository = "https://github.com/semantic-language/sem-lang"
+homepage = "https://github.com/semantic-language/sem-lang"
+documentation = "https://github.com/semantic-language/sem-lang#readme"
+readme = "../../README.md"
+rust-version = "1.97"
+keywords = ["semantic", "language", "test", "fixtures"]
+categories = ["development-tools"]
+publish = false
+
+[dependencies]
+sem-lang-core = { version = "=0.10.0", path = "../sem-lang-core" }
+sem-lang-frontend = { version = "=0.10.0", path = "../sem-lang-frontend" }
+sem-lang-repository = { version = "=0.10.0", path = "../sem-lang-repository" }
+sem-lang-runtime = { version = "=0.10.0", path = "../sem-lang-runtime" }
+sem-lang-memory = { version = "=0.10.0", path = "../sem-lang-memory" }
+sem-lang-vocab = { version = "=0.10.0", path = "../sem-lang-vocab" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
