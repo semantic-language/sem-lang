@@ -32,5 +32,7 @@ jobs:
       - run: node scripts/verify.mts
       - name: Verify independent public source-owner composition
         run: |
+          cargo fmt --manifest-path fixtures/source-owner-composition/Cargo.toml -- --check
           cargo build --locked --manifest-path fixtures/source-owner-composition/Cargo.toml
+          cargo test --locked --manifest-path fixtures/source-owner-composition/Cargo.toml
           cargo clippy --locked --manifest-path fixtures/source-owner-composition/Cargo.toml --all-targets -- -D warnings

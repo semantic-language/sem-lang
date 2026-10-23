@@ -13,6 +13,7 @@ to perform an external operation. UI and provider integrations remain consumers.
 - [Local filesystem store](crates/sem-lang-store-fs)
 - [Inference boundary](crates/sem-lang-inference-client)
 - [Independent source consumer](fixtures/source-consumer)
+- [Actual producer composition acceptance](fixtures/source-owner-composition)
 - [Dependency policy](docs/dependency-updates.md)
 
 ## Verify
@@ -20,7 +21,9 @@ to perform an external operation. UI and provider integrations remain consumers.
 With the existing Rust 1.97 and Node toolchain, run
 `node scripts/document-links.mts` and `node scripts/verify.mts`.
 It checks source boundaries, feature configurations, Clippy, conformance and an
-independent consumer. The actual-owner inference test needs an accepted inference
+independent consumer by executing its snapshot/error assertions. Public CI also
+executes the pinned source producer's binding and language-composition tests.
+The actual-owner inference test needs an accepted inference
 registry; an ignored case is not successful integration acceptance. No model is
 downloaded by the default source verification.
 

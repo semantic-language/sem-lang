@@ -26,5 +26,5 @@ fn main() {
         assert_eq!(decoded, error);
         assert_eq!(Codec::canonical_json(&decoded).unwrap(), encoded);
     }
-    println!("Immutable registry archive: exact language snapshot and typed current failures verified; no execution or promotion implied.");
+    println!("Independent source consumer: language snapshot and typed failures round-trip; no registry publication, execution or promotion implied.");
 }
