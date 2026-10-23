@@ -158,16 +158,17 @@ fn language_owner_rejects_supported_producer_shapes_it_cannot_interpret() {
 
 #[test]
 fn producer_and_consumer_budgets_are_independently_enforced() {
-    let mut owner = owner();
-    owner.budget.max_nodes = 1;
+    let mut consumer_limited = owner();
+    consumer_limited.budget.max_nodes = 1;
     assert_eq!(
-        bind(&owner, submission(&owner)).unwrap_err(),
+        bind(&consumer_limited, submission(&consumer_limited)).unwrap_err(),
         "source-semantic-budget-invalid"
     );
-    let mut owner = owner();
-    owner.plan.source.budget.max_nodes = 1;
-    owner.plan.declaration.action.contract_revision = owner.plan.contract_ref().unwrap();
-    assert!(bind(&owner, submission(&owner)).is_err());
+    let mut producer_limited = owner();
+    producer_limited.plan.source.budget.max_nodes = 1;
+    producer_limited.plan.declaration.action.contract_revision =
+        producer_limited.plan.contract_ref().unwrap();
+    assert!(bind(&producer_limited, submission(&producer_limited)).is_err());
 }
 
 #[test]
