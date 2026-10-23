@@ -1,4 +1,4 @@
-//! Private composition fixture. Context is explicit and never sent to a generic producer.
+//! Public source-only composition fixture; supplied owner context remains private.
 use sem_lang_frontend::{
     CompileContext,
     current::{source_structure::source_to_structural, structural::StructuralBudget},
@@ -39,3 +39,6 @@ async fn main() {
         std::process::exit(1);
     }
 }
+
+#[cfg(test)]
+mod tests;
