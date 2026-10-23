@@ -315,7 +315,8 @@ pub mod prelude {
         Context, Engine, EngineBuildError, EngineBuilder, EngineError, Exception, ExceptionCase,
         RuntimeState, RuntimeStateTransition, SurfaceInput,
     };
-    pub use sem_lang_codec::Codec;
+    #[cfg(feature = "json")]
+    pub use crate::Codec;
     pub use sem_lang_context::{
         ContextAuthority, ContextBinding, ContextEngine, ContextKind, ContextScope, ContextSource,
         ContextStore, ObservationError, ObservationReceipt, ObservationRequest,
