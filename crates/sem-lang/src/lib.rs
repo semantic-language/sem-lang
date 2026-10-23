@@ -307,6 +307,8 @@ pub enum EngineBuildError {
 
 /// Public façade prelude.
 pub mod prelude {
+    #[cfg(feature = "json")]
+    pub use crate::Codec;
     #[cfg(feature = "memory-store")]
     pub use crate::InMemoryRepository;
     #[cfg(feature = "evolution")]
@@ -315,8 +317,6 @@ pub mod prelude {
         Context, Engine, EngineBuildError, EngineBuilder, EngineError, Exception, ExceptionCase,
         RuntimeState, RuntimeStateTransition, SurfaceInput,
     };
-    #[cfg(feature = "json")]
-    pub use crate::Codec;
     pub use sem_lang_context::{
         ContextAuthority, ContextBinding, ContextEngine, ContextKind, ContextScope, ContextSource,
         ContextStore, ObservationError, ObservationReceipt, ObservationRequest,
