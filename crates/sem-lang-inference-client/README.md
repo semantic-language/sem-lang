@@ -30,3 +30,14 @@ cargo test --locked -p sem-lang-inference-client
 ## Source ownership
 
 This adapter belongs to this semantic workspace. It is source-owned (`publish = false`); no private registry is required. LICENSE and NOTICE retain the original attribution.
+
+## Public dependency boundary (0.10.2)
+
+This source-private adapter consumes the published `zixcel-local-inference =0.11.0`
+crate. Model admission, bundle/native-worker verification and process execution
+remain owned by Zixcel; sem-lang retains explicit semantic adoption and binding
+validation. The adapter is not a registry package and grants no Hatter authority.
+Existing normal and revoked-binding tests run in owner CI; the actual model case
+still requires its explicitly accepted M4-B registry and remains ignored until
+that prerequisite is provided. Updating a dependency does not authorize model
+acquisition or resume held host tests.
