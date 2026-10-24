@@ -4,3 +4,10 @@ Copyright 2026 HAT Inc.
 HAT Inc. contributions in this version are offered under MPL-2.0.
 Previous grants and third-party notices retain their respective terms.
 Optional paid support requires a separate agreement with HAT Inc.
+
+Public Coela producer fixture:
+conformance/source/fixtures/coela-evidence/evidence.sem is original Coela
+Engineering knowledge under CC-BY-4.0, attributed to Coela. The unmodified
+source.json descriptor is MIT. Exact original source/release/digests are in
+provenance.json; the original license texts are retained in that directory.
+These selected fixture bytes are not independently editable semantic definitions.

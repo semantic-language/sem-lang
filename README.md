@@ -14,6 +14,7 @@ to perform an external operation. UI and provider integrations remain consumers.
 - [Inference boundary](crates/sem-lang-inference-client)
 - [Independent source consumer](fixtures/source-consumer)
 - [Actual producer composition acceptance](fixtures/source-owner-composition)
+- [Independent Coela producer acceptance](docs/coela-producer-acceptance.md)
 - [Dependency policy](docs/dependency-updates.md)
 
 ## Verify

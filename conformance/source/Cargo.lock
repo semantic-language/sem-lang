@@ -366,10 +366,23 @@ dependencies = [
  "sem-lang-core",
  "sem-lang-memory",
  "sem-lang-repository",
+ "sem-lang-standard",
  "sem-lang-store-fs",
  "sem-lang-vocab",
  "serde_json",
  "tempfile",
+]
+
+[[package]]
+name = "sem-lang-standard"
+version = "0.10.0"
+dependencies = [
+ "sem-lang-core",
+ "sem-lang-linguistics",
+ "sem-lang-vocab",
+ "serde",
+ "serde_json",
+ "thiserror",
 ]
 
 [[package]]
