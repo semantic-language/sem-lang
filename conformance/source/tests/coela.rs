@@ -1,10 +1,11 @@
-//! An actual public producer definition through this independent owner consumer.
+//! An actual public producer definition through this independent Unix owner consumer.
+#![cfg(unix)]
 use sem_lang::{
-    CompileContext, Engine, RuntimeState, SurfaceInput,
+    Engine, RuntimeState, SurfaceInput,
     current::{ProcessingOutcome, Reason},
     restoration,
 };
-use sem_lang_context::{ContextScope, ContextStore, ContextSubject};
+use sem_lang_context::ContextStore;
 use sem_lang_core::TermId;
 use sem_lang_memory::definitions;
 use sem_lang_repository::{Repository, RevisionRef};
@@ -13,11 +14,9 @@ use sem_lang_vocab::VocabularyModule;
 use std::{fs, os::unix::fs::PermissionsExt};
 const SOURCE: &str = include_str!("../fixtures/coela-evidence/evidence.sem");
 const NAMESPACE: &str = "coela-independent-owner";
-fn modules() -> Vec<VocabularyModule> {
-    let mut modules = sem_lang_standard::language_set().unwrap().modules.clone();
-    modules.push(VocabularyModule::from_sem(SOURCE).unwrap());
-    modules
-}
+#[path = "coela/fixture.rs"]
+mod fixture;
+use fixture::modules;
 #[test]
 fn public_coela_source_is_used_after_explicit_adoption_and_durable_reload() {
     let temp = tempfile::Builder::new()
@@ -56,23 +55,7 @@ fn public_coela_source_is_used_after_explicit_adoption_and_durable_reload() {
     );
     let engine = Engine::restore_view(&reopened, refs.clone()).unwrap();
     let term = TermId::from_declaration("coela/engineering/evidence", "ImplementationEvidence");
-    let mut context = CompileContext {
-        subject: ContextSubject {
-            id: "synthetic-reviewer".into(),
-            class: "test".into(),
-        },
-        evidence: vec![],
-        at: None,
-        locale: "en".into(),
-        semantic_revision: engine
-            .current_compiler()
-            .unwrap()
-            .semantic_revision()
-            .unwrap(),
-        context_refs: vec![],
-        context_scope: ContextScope::CurrentRequest,
-        observation_evidence: vec![],
-    };
+    let mut context = fixture::context(&engine);
     for (locale, text) in [("en", "implementation evidence"), ("ja", "実装の証拠")] {
         context.locale = locale.into();
         let compiled = engine

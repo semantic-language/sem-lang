@@ -8,7 +8,7 @@ editing; update them from a reviewed upstream release rather than rewriting the
 producer's vocabulary here. Original CC-BY-4.0/MIT attribution and licenses remain.
 
 The standard verification command already executes this independent conformance
-crate. Two additional cases use this owner's native compiler/standard definitions,
+crate. Two additional Unix filesystem cases use this owner's native compiler/standard definitions,
 explicit revision-checked adoption, filesystem checkpoint/reopen and bilingual
 meaning compilation. Unknown surfaces and stale semantic revisions do not resolve;
 undeclared dependencies and conflicting producer definitions cannot adopt.
