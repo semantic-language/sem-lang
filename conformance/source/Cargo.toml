@@ -18,3 +18,4 @@ sem-lang-store-fs = { version = "=0.10.0", path = "../../crates/sem-lang-store-f
 sem-lang-repository = { version = "=0.10.0", path = "../../crates/sem-lang-repository" }
 serde_json = "1.0"
 tempfile = "3.27.0"
+sem-lang-standard = { version = "=0.10.0", path = "../../crates/sem-lang-standard" }

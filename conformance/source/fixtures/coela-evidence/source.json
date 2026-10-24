@@ -1,0 +1,18 @@
+{
+  "schema_version": "coela-semantic-source/1",
+  "id": "coela-engineering-evidence",
+  "version": "0.1.0",
+  "module": {
+    "path": "integrations/semantic/evidence.sem",
+    "sha256": "6736c2fc5fc6819f2baa9b403362b1b6873600f0abb96ae37ae2b10f723116da"
+  },
+  "guidance": {
+    "catalogId": "coela-engineering-content",
+    "version": "0.2.4",
+    "catalogSha256": "99d4f79a6dd291a35e060b225ec34b1793863ac67927d035796e80bde7b1527f",
+    "contentId": "engineering-principles-en",
+    "contentSha256": "152199edd03f171ec85011c4ec22376b88dec762cf8b3c2db175718670531e43"
+  },
+  "term": "ImplementationEvidence",
+  "sem_lang_revision": "a7b382aa6bb1ecb26fa160a71bdf784b5772a4cb"
+}

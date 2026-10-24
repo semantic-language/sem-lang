@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/coela-oss/engineering",
+  "source": "b9c7591b21d150a6b804a4d5098dbebe1167f6fa",
+  "release": "https://github.com/coela-oss/engineering/releases/tag/semantic/v0.1.0",
+  "archiveSha256": "1e0bdfa7de7c13630bc107d12aca6248620a6fb67c47c924bf96ef707a9ed831",
+  "files": {
+    "integrations/semantic/evidence.sem": "6736c2fc5fc6819f2baa9b403362b1b6873600f0abb96ae37ae2b10f723116da",
+    "integrations/semantic/source.json": "0bcae88835062acd2033a8aa14a95c3a442a3c7b0232bfb909f07dc157bd27ce"
+  },
+  "attribution": "Coela",
+  "license": "CC-BY-4.0",
+  "descriptorLicense": "MIT",
+  "scope": "source-selected fixture; no publisher trust, HAT grant or model-owner execution"
+}

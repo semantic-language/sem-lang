@@ -1,0 +1,41 @@
+# Language
+  Identifier: coela/engineering/evidence
+  Version: 0.10.0
+  Dependencies: sem-lang/standard/semantic
+
+# Term
+  Name: ImplementationEvidence
+  Description: A reported implementation artifact category, not verified behavior or permission.
+  Meaning: Composition/Apply/sem-lang/standard/semantic::Relation
+  引数/4300000000000000000000000000ce01: Literal/implementation
+  引数/4300000000000000000000000000ce02: Literal/reported
+
+# Role
+  RoleId: 4300000000000000000000000000ce01
+  名称: evidence-kind
+  多重度: ExactlyOne
+  説明: The kind of evidence explicitly reported by its owner.
+
+# Role
+  RoleId: 4300000000000000000000000000ce02
+  名称: evidence-state
+  多重度: ExactlyOne
+  説明: Reported status does not establish verification, adoption or authority.
+
+# Surface
+  Language: en
+  Surface: implementation evidence
+  Normalized: implementation evidence
+  Kind: Denotational
+  Target: ImplementationEvidence
+  Priority: 100
+  Provenance: coela-engineering-content/0.2.4/engineering-principles-en
+
+# Surface
+  Language: ja
+  Surface: 実装の証拠
+  Normalized: 実装の証拠
+  Kind: Denotational
+  Target: ImplementationEvidence
+  Priority: 100
+  Provenance: coela-engineering-content/0.2.4/engineering-principles-ja
